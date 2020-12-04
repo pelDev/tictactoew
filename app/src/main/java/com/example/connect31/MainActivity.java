@@ -49,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
         if (gameState[tag] == 2 && gameIsActive) {
 
-            showToast(Integer.toString(activePlayer), Toast.LENGTH_SHORT);
-
             gameState[tag] = activePlayer;
 
             counter.setTranslationY(-1000f);
@@ -107,13 +105,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-
-
-    private void showToast(String message, int lengthShort) {
-        Toast.makeText(this, message, lengthShort).show();
-    }
-
 
     public void playAgain(View view) {
 
